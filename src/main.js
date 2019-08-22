@@ -1,7 +1,7 @@
 import { get_data } from "./apis/data";
 import { connect, disconnect, subscribe, unsubscribe } from "./apis/realtime";
 
-import { sortPoints, addRow } from "./utils/util";
+import {sortPoints, addRow, removeRow} from "./utils/util";
 import { POINTS, SORT_ASC, SORT_DESC, CONNECTED_EVENT, RECEIVED_EVENT } from "./constants";
 
 import "./css/style.css";
@@ -70,10 +70,10 @@ const unSubscribeToSelectedPoints = () => {
 };
 
 const handlePointsData = (e) => {
-    // pointsData = addToSorted(pointsData, sortDirection, JSON.parse(e.detail));
     const point = JSON.parse(e.detail);
     const tableBody = document.querySelector('.content-body');
     addRow(point, tableBody, sortDirection);
+    removeRow(tableBody, sortDirection);
 };
 
 const handleConnected = (e) => {

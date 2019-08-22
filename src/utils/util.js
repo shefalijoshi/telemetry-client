@@ -44,6 +44,11 @@ const addCell = (newRow, index, value) => {
     newCell.appendChild(newText);
 };
 
+export const removeRow = (el, sortDirection) => {
+    const rowIndex = (sortDirection === 'asc') ? 0 : -1;
+    let newRow = el.deleteRow(rowIndex);
+};
+
 export const getStringDate = (timestamp) => {
     return new Date(timestamp).toISOString();
 };
