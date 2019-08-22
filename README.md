@@ -20,10 +20,9 @@ X-Requested-With, Content-Type, Accept"); next();
 
 ## Clone
 git clone https://github.com/shefalijoshi/telemetry-client.git <br>
-cd openmct-tutorial<br>
+cd telemetry-client<br>
 
 ## Installation
-cd telemetry-client<br>
 npm install<br>
 npm run build<br>
 
