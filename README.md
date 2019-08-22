@@ -2,7 +2,8 @@
 
 ## Prerequisites
 Downloading and Running the Telemetry Server
-git clone ​https://github.com/nasa/openmct-tutorial.git
+
+git clone https://github.com/nasa/openmct-tutorial.git
 cd openmct-tutorial
 npm install
 npm start
