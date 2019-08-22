@@ -53,7 +53,7 @@ const clearData = () => {
 const showData = () => {
     const tableBody = document.querySelector('.content-body');
     pointsData.forEach((point) => {
-        addRow(point, tableBody, sortDirection);
+        addRow(point, tableBody, sortDirection, true);
     });
 };
 

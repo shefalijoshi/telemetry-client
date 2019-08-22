@@ -28,8 +28,8 @@ export const sortPoints = (data, sortDirection) => {
     return sorted;
 };
 
-export const addRow = (point, el, sortDirection) => {
-    const rowIndex = sortDirection === 'asc' ? -1 : 0;
+export const addRow = (point, el, sortDirection, append) => {
+    const rowIndex = (append || (sortDirection === 'asc')) ? -1 : 0;
     let newRow = el.insertRow(rowIndex);
     addCell(newRow, 0, point.id);
     addCell(newRow, 1, getStringDate(point.timestamp));
