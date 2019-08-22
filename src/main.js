@@ -111,7 +111,7 @@ const handleUpdateSortOrder = (event) => {
         sortOrderEl.className = 'timestamp-sort desc';
         sortDirection = SORT_DESC;
     } else {
-        sortOrderEl.className = 'timestamp-sort';
+        sortOrderEl.className = 'timestamp-sort asc';
         sortDirection = SORT_ASC;
     }
 
