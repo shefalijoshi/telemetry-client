@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="bundle.js"></script>
+</head>
+<body>
+<section class="options">
+    <div>
+        <label for="points">Choose telemetry points:</label>
+        <select name="points" id="points" multiple>
+            <option value="pwr.v" selected>pwr.v</option>
+            <option value="pwr.c" selected>pwr.c</option>
+        </select>
+    </div>
+</section>
+<section class="content">
+    <table class="content-data">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th class="timestamp-sort">Timestamp</th>
+            <th>Value</th>
+        </tr>
+        </thead>
+        <tbody class="content-body">
+        </tbody>
+    </table>
+</section>
+</body>
+</html>

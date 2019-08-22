@@ -1,0 +1,57 @@
+.options, .content {
+    width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*table styling*/
+.content-data {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: auto;
+}
+
+.content-data th {
+    text-align: left;
+}
+
+.content-data th, td {
+    padding: 5px;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+.content-data tr:nth-child(2n) {
+    background-color: #e8e8e8;
+}
+
+.content-data th:nth-child(1) {
+    width: 20%;
+}
+
+.content-data th:nth-child(2) {
+    width: 40%;
+}
+
+.content-data th:nth-child(3) {
+    width: 40%;
+}
+
+/*options styling*/
+#points {
+    min-width: 200px;
+    height: auto;
+    margin-bottom: 50px;
+    vertical-align: text-top;
+    font-size: 1em;
+}
+
+.timestamp-sort:after {
+    content: "\25bc";
+    color: gray;
+}
+
+.timestamp-sort.desc:after {
+    content: "\25b2";
+    color: gray;
+}
