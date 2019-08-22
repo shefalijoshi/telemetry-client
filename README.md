@@ -19,7 +19,8 @@ X-Requested-With, Content-Type, Accept"); next();
 +});
 
 ## Clone
-git clone ​https://github.com/nasa/openmct-tutorial.git cd openmct-tutorial<br>
+git clone https://github.com/shefalijoshi/telemetry-client.git <br>
+cd openmct-tutorial<br>
 
 ## Installation
 cd telemetry-client<br>
