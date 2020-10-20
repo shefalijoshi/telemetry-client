@@ -6,7 +6,7 @@ export const getUrlsForPoints = (api, points, start, end) => {
     points = points || [];
 
     return points.map((point) => {
-        return `${api}/${point}?start=${start}&end=${end}`;
+        return `${api}${point}?start=${start}&end=${end}`;
     });
 };
 

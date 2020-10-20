@@ -1,5 +1,5 @@
-export const HISTORY_API='http://localhost:8080/history';
-export const REALTIME_API='ws://localhost:8080/realtime';
+export const HISTORY_API='http://localhost:3000/history/';
+export const REALTIME_API='ws://localhost:3000/realtime/';
 
 export const SUBSCRIBE_PREFIX='subscribe ';
 export const UNSUBSCRIBE_PREFIX='unsubscribe ';

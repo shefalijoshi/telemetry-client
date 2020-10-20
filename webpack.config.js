@@ -25,7 +25,20 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
-        port: 3000
+        port: 3000,
+        proxy: {
+            "/history/*": {
+                target: "http://localhost:8080/",
+                secure: false,
+                changeOrigin: true
+            },
+            "/realtime/*": {
+                target: "ws://localhost:8080/",
+                secure: false,
+                changeOrigin: true,
+                ws: true
+            }
+        }
     },
     plugins: [
         ///...
